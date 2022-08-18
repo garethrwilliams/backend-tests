@@ -12,6 +12,8 @@ const reverseCapitalisation = (str) => {
       return e;
     })
     .join('');
+
+  // return str.replace(/\w/g, (letter) =>  /[A-Z]/.test(letter) ? letter.toLowerCase() : letter.toUpperCase());
 };
 
 module.exports = reverseCapitalisation;
