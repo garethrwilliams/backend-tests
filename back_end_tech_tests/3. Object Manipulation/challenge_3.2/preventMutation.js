@@ -20,6 +20,4 @@ function preventMutation(input) {
   return into;
 }
 
-console.log(preventMutation([1, [3, 4], 'hello']));
-
 module.exports = preventMutation;
