@@ -5,10 +5,10 @@ function areIdentical(obj1, obj2) {
   if (obj1Arr.length !== obj2Arr.length) return false;
 
   function flatten(into, node) {
-    if (node == null) return into;
+    if (node == null) return 'hello';
     if (typeof node === 'object' && !Array.isArray(node) && node !== null)
       node = Object.entries(node);
-    if (Array.isArray(node)) return node.reduce(flatten, into);
+    if (Array.isArray(node)) node.reduce(flatten, into);
     into.push(node);
     return flatten(into);
   }
